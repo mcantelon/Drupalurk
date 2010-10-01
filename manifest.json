@@ -4,11 +4,11 @@
       "default_title": "Drupal News",
       "popup": "popup.html"
    },
-   "description": "Get a birds-eye view of what's going on with Drupal.",
+   "description": "Get recent tweets and news about Drupal and chat with other Drupal users.",
    "icons": {
       "128": "drupal_large.png"
    },
-   "name": "Drupal News",
+   "name": "Drupalurk",
    "permissions": [ "tabs", "http://*.mikecantelon.com/*", "http://www.google.com/*" ],
    "version": "0.9"
 }
