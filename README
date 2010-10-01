@@ -1,1 +1,19 @@
-Drupalurk readme. More here soon.
+Drupalurk
+---------
+
+Drupalurk is a Chrome extension I wrote for a presentation to show how
+content from Drupal can be used in non-Drupal contexts.
+
+The extension pulls #drupal tweets live and allows browsing of recent
+Drupal news. It also has a simple chat that allows users of the extension
+to chat if the universe puts them in the channel at the same time.
+
+The tweet pulling is done via the Twitter Javascript API and the Drupal news
+feed is generated in JSON by a Drupal site (using the Views Datasource
+views_json module). The chat is driven by node.js (and crudely embedded
+using an iframe) and is a slightly modified version of Ryan Dahl's Node
+Chat (http://github.com/ry/node_chat).
+
+Google-hosted JQuery is used for the Javascriptery.
+
+(c) 2010 Mike Cantelon, GPL licensed
