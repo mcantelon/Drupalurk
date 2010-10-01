@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Drupal News</title>
+<link type="text/css" rel="stylesheet" media="all" href="css/twitter_search.css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="js/twitter_search.js"></script>
+<script type="text/javascript" src="js/get_external_content.js"></script>
+</head>
+
+<body>
+
+<div id='wrapper'>
+
+  <div id='sidebar_wrapper'>
+    <div id='sidebar_pager'></div>
+    <div id='sidebar'>Loading...</div>
+  </div>
+
+  <div id='navigation'>
+    <a href='#' onClick="$('#tweets').hide();$('#chat').show();" class='button'>Chat</a>
+    <a href='#' onClick="$('#chat').hide();$('#tweets').show();" class='button'>Tweets</a>
+  </div>
+
+  <div id='chat'>
+    <iframe id="ifrm" src="http://mikecantelon.com:3000" scrolling="auto" style="padding: 0px; margin: 0px; border-width: 0px; width: 400px; height: 500px;"></iframe>
+  </div>
+
+  <div id='tweets' style='display: none;'>
+    <span id='tweets_loading'>Loading...</span>
+  </div>
+
+  <div id='info'><a id='project' href='#'>Drupalurk</a> - Live Tweets / Latest News - by <a id='about' href='#'>Mike Cantelon</a></div>
+
+</div id='wrapper'>
+
+<div id='last_id' style='display:none'></div>
+
+<script type="text/javascript">
+google.load('jquery', '1.4.2')
+
+google.setOnLoadCallback(function() {
+	
+  $('#about').click(function() {
+  	chrome.tabs.create({'url': 'http://mikecantelon.com'})
+  })
+  $('#project').click(function() {
+  	chrome.tabs.create({'url': 'http://mikecantelon.com/content/drupalurk'})
+  })
+  
+  twitter_search('#drupal')
+  get_external_content(0)
+})
+</script>
+
+</body>
+
+</html>

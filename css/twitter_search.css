@@ -1,0 +1,80 @@
+#wrapper {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#navigation {
+  width: 460px;
+  height: 17px;
+  font-family: sans-serif;
+  font-size: .8em;
+}
+#chat {
+  width: 460px;
+  height: 463px;
+}
+#tweets {
+  width: 460px;
+  height: 463px;
+  overflow: hidden;
+}
+.tweet_wrapper {
+  font-family: sans-serif;
+  font-size: .8em;
+  margin-bottom: 10px;
+}
+#sidebar_wrapper {
+  width: 200px;
+  height: 500px;
+  padding-top: 0px;
+  padding-right: 10px;
+  float: right;
+}
+#sidebar_pager {
+  width: 200px;
+  height: 17px;
+  font-family: sans-serif;
+  font-size: .8em;
+}
+#sidebar {
+  width: 200px;
+  height: 483px;
+  padding-right: 10px;
+  font-family: sans-serif;
+  font-size: .8em;
+  overflow: scroll;
+}
+#tweets_loading {
+  font-family: sans-serif;
+  font-size: 2em;
+}
+#info {
+  font-family: sans-serif;
+  font-size: .5em;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-left: 10px;
+}
+.button {
+  background-color: #ddd;
+  border: 1px solid black;
+  text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.more {
+  text-align: right;
+}
+.clearfix {
+  display: inline-block;
+}
+a {
+  color: #333;
+}
+p {
+  margin-bottom: 0px;
+}
+li {
+  text-decoration:none;
+}

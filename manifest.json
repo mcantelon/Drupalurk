@@ -1,0 +1,14 @@
+{
+   "browser_action": {
+      "default_icon": "drupal_small.png",
+      "default_title": "Drupal News",
+      "popup": "popup.html"
+   },
+   "description": "Get a birds-eye view of what's going on with Drupal.",
+   "icons": {
+      "128": "drupal_large.png"
+   },
+   "name": "Drupal News",
+   "permissions": [ "tabs", "http://*.mikecantelon.com/*", "http://www.google.com/*" ],
+   "version": "0.9"
+}
